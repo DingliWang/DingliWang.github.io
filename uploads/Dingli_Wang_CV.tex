@@ -1,0 +1,155 @@
+\documentclass[11pt]{article}
+
+% ---------- Packages ----------
+\usepackage[letterpaper, margin=0.9in]{geometry}
+\usepackage{mathptmx}            % Times-like serif body + math
+\usepackage[scaled=0.92]{helvet} % Helvetica for headers
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks=true, urlcolor=black, linkcolor=black}
+
+% ---------- Section style: sans-serif bold, rule beneath ----------
+\titleformat{\section}
+  {\sffamily\large\bfseries}{}{0em}{}[{\vspace{0.4ex}\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{1.5ex plus .2ex minus .2ex}{0.8ex}
+
+% ---------- Footer ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\lfoot{\footnotesize Updated \today}
+\rfoot{\footnotesize Dingli Wang \,\textbar\, Page \thepage}
+
+% ---------- Helpers ----------
+\newcommand{\me}{\textbf{Dingli Wang}}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em, itemsep=0.3ex, topsep=0.4ex}
+\setlist[enumerate]{leftmargin=1.7em, itemsep=0.6ex, topsep=0.4ex}
+
+% right-aligned dates on the same line
+\newcommand{\dateright}[1]{\hfill\textnormal{#1}}
+
+\begin{document}
+
+% ===================== HEADER =====================
+\begin{center}
+  {\sffamily\Huge\bfseries Dingli Wang}\\[0.7em]
+  Department of Economics, University of California, Riverside\\[0.35em]
+  \href{mailto:dwang177@ucr.edu}{dwang177@ucr.edu}
+  \quad$\cdot$\quad (951)~231--0895
+  \quad$\cdot$\quad \href{https://YOUR-WEBSITE.com}{YOUR-WEBSITE.com}
+  % \\[0.2em] Citizenship: China \quad$\cdot$\quad U.S. work authorization: [F-1, OPT eligible]  % <- optional: uncomment if you want it
+\end{center}
+
+\vspace{0.2em}
+
+% ===================== EDUCATION =====================
+\section{Education}
+\textbf{Ph.D. in Economics}, University of California, Riverside \dateright{Expected June 2027}\\
+\hspace*{1.2em}\textit{Dissertation Committee:} Tae-Hwy Lee (Chair), [Committee Member], [Committee Member]
+
+\vspace{0.8ex}
+\textbf{M.A. in Economics}, Boston University \dateright{2020}
+
+\vspace{0.8ex}
+\textbf{B.S. in Economic Statistics}, Tianjin University of Finance and Economics \dateright{2018}
+
+% ===================== FIELDS =====================
+\section{Research Fields}
+\textbf{Primary:} Econometric Theory \\
+\textbf{Secondary:} Time Series Econometrics; Forecasting; Machine Learning in Economics
+
+% ===================== JOB MARKET PAPER =====================
+\section{Job Market Paper}
+\textbf{``Robust Replacement of Human Decision Makers under Covariate Shift.''} \me. \\
+\textit{Under review, Journal of Econometrics.}
+
+\vspace{0.6ex}
+\noindent\hangindent=1.2em
+\textit{Abstract.}\, I study when a machine-learning algorithm should replace a human decision maker once the deployment environment differs from the environment in which it was trained. Modeling this distribution shift through a conditional Wasserstein ambiguity set, I characterize a distributionally robust ROC frontier that bounds achievable performance under the shift, and I derive a finite-sample welfare-regret bound that governs the replacement decision and yields a feasible rule for when automation dominates human judgment.
+
+% ===================== WORKING PAPERS =====================
+\section{Working Papers}
+\begin{enumerate}
+  \item \textbf{``Inferential Theory for Factor-Augmented Quantile Regression under Weak Loadings.''} \me. \textit{Under review, Journal of Econometrics.}\\
+  {\small $\sqrt{T}$-rate inference for factor-augmented quantile regression under weak loadings, with a Procrustes-aligned split-panel jackknife for bias correction; U.S.\ inflation-at-risk application.}
+
+  \item \textbf{``Conditional Distributionally Robust Estimation with Wasserstein Ambiguity.''} \me. \textit{Under review, Journal of Econometrics.}\\
+  {\small Distributionally robust M-estimation under a conditional Wasserstein ambiguity set (fix $P_X$, perturb $Y\mid X$), with pilot-anchored regularization; U.S.\ Growth-at-Risk application.}
+
+  \item \textbf{``Forecast Combination with AI-Generated Narrative States: Bias, Correction, and Inference.''} \me\ and Xinran Liu. \textit{Under review, Journal of Econometrics.}\\
+  {\small Plug-in inference fails at first order when the weight-driving ``narrative state'' is estimated from text; a block cross-fitting correction restores valid inference; Federal Reserve communication application.}
+
+  \item \textbf{``Generated Covariates and Inference for Heterogeneous Treatment Effects under a Scalar Factor Structure.''} Xinran Liu and \me. \textit{Under review, Journal of Econometrics.}\\
+  {\small Plug-in CATE estimators inherit a contamination term that Neyman orthogonality does not remove when conditioning covariates are generated; corrected via cross-fitting at the covariate-generation stage.}
+
+  \item \textbf{``Localizing Distributional Granger Predictability by Wasserstein Projection.''} Xinran Liu and \me. \textit{Under review, Journal of Business \& Economic Statistics.}\\
+  {\small A Wasserstein-projection test localizing whether a predictor enters the location versus the tail of the conditional distribution; weighted chi-square limit theory.}
+
+  \item \textbf{``When Should Forecasts Be Equally Weighted? A Signal--Cost Diagnostic for Forecast Combination.''} \me. \textit{Working paper.}\\
+  {\small A signal--cost diagnostic for when adaptive forecast combination dominates simple equal weights; FRED-MD rolling-forecast evidence.}
+\end{enumerate}
+
+% ===================== WORK IN PROGRESS =====================
+\section{Work in Progress}
+\begin{itemize}
+  \item \textbf{``Adversarial Macroeconomic Density Forecasts.''} \me\ and Tae-Hwy Lee. \textit{(In preparation.)} A regularized conditional Wasserstein GAN (RcWGAN) for small-sample macro-financial density forecasting, with a moment--quantile penalty.
+  \item \textbf{``Anchored Tail-Spread Recalibration for Joint VaR--ES Forecasts.''} \me\ and Tae-Hwy Lee. \textit{(In preparation.)} A one-parameter post-estimation layer that jointly recalibrates Value-at-Risk and Expected Shortfall; S\&P~500 application.
+\end{itemize}
+
+% ===================== TEACHING =====================
+\section{Teaching Experience}
+\textit{University of California, Riverside}
+
+\vspace{0.8ex}
+\textbf{Instructor of Record}
+\begin{itemize}
+  \item \textbf{Econ/Bus 178} --- International Trade \dateright{Summer 2025}
+\end{itemize}
+
+\vspace{0.4ex}
+\textbf{Teaching Assistant}
+\begin{itemize}
+  \item \textbf{Econ 205C} --- Econometric Methods III \textit{(Ph.D.)} \dateright{Spring 2026}
+  \item \textbf{Econ 107} --- Introductory Econometrics I \dateright{Spring 2025}
+  \item \textbf{Econ 101} --- Statistics for Economics \\
+        {\small Summer 2023, Fall 2023, Winter 2024, Fall 2024, Winter 2025, Summer 2025, Fall 2025, Winter 2026}
+  \item \textbf{Econ 003} --- Introduction to Microeconomics \dateright{Winter 2023}
+  \item \textbf{Econ 002} --- Introduction to Macroeconomics \\
+        {\small Fall 2022, Spring 2023, Spring 2024, Summer 2024}
+\end{itemize}
+
+% ===================== PRESENTATIONS =====================
+\section{Conference Presentations}
+\begin{itemize}
+  \item Asian Meeting of the Econometric Society (AMES), Hong Kong \dateright{2026}
+\end{itemize}
+
+% ===================== AWARDS =====================
+\section{Fellowships and Awards}
+\begin{itemize}
+  \item Dean's Distinguished Fellowship, University of California, Riverside \dateright{2021--2026}
+  \item High Pass, Ph.D.\ Qualifying Examination, University of California, Riverside \dateright{2022}
+  \item First Prize, Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM) \dateright{2016}
+\end{itemize}
+
+% ===================== SKILLS / LANGUAGES =====================
+\section{Computing and Languages}
+\textbf{Programming:} Python, R, Stata, EViews, \LaTeX \\
+\textbf{Languages:} English (fluent); Mandarin Chinese (native)
+
+% ===================== REFERENCES =====================
+\section{References}
+\begin{itemize}
+  \item \textbf{Professor Tae-Hwy Lee} (Chair) --- Department of Economics, UC Riverside --- [email]
+  \item \textbf{[Reference 2]} --- [title], [institution] --- [email]
+  \item \textbf{[Reference 3]} --- [title], [institution] --- [email]
+\end{itemize}
+
+\end{document}
