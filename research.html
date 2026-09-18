@@ -4,14 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research — Dingli Wang</title>
-<meta name="description" content="Research and working papers of Dingli Wang — econometric theory, robust estimation, forecasting.">
+<meta name="description" content="Research of Dingli Wang — econometric theory, time series econometrics, forecasting, and machine learning in economics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <nav class="nav">
   <div class="nav__inner">
     <a class="nav__brand" href="index.html">Dingli Wang</a>
@@ -24,210 +23,72 @@
   </div>
 </nav>
 
-<main class="page" data-screen-label="Research">
-
-  <!-- ============ JOB MARKET PAPER — top, most prominent ============ -->
+<main class="page">
   <section class="section" id="jmp" style="margin-top:0;">
     <div class="jmp">
       <span class="tag">Job Market Paper</span>
-      <h2 class="jmp__title"><a href="#">Conditional Distributionally Robust Estimation with Wasserstein Ambiguity</a></h2>
+      <h1 class="jmp__title">Robust Replacement of Human Decision Makers under Covariate Shift</h1>
       <p class="paper__meta" style="margin-bottom:14px;">
         <span>Dingli Wang</span>
-        <span class="status">Under review, Journal of Econometrics</span>
+        <span class="status">Revise and Resubmit, <em>Journal of Econometrics</em></span>
       </p>
-      <p class="measure" style="color:var(--ink-soft); margin-bottom:18px;">
-        How can we estimate models that remain reliable when the conditional distribution of outcomes
-        shifts away from the one observed in the data?
+      <p class="measure" style="color:var(--ink-soft);">
+        When should a machine-learning algorithm replace a human decision maker once the deployment environment differs from the environment in which it was trained?
       </p>
-
       <details class="abstract" open>
         <summary><span class="chev">▶</span> Abstract</summary>
         <div class="abstract__body">
-          <p>I develop distributionally robust M-estimation under a conditional Wasserstein ambiguity
-          set that fixes the marginal distribution of covariates $P_X$ while allowing the conditional
-          law of $Y \mid X$ to be perturbed. A pilot-anchored regularization scheme makes the resulting
-          estimator feasible and stable in finite samples, and I establish its large-sample properties.
-          The theory is applied to U.S. Growth-at-Risk.</p>
+          <p>I study when a machine-learning algorithm should replace a human decision maker once the deployment environment differs from the environment in which it was trained. Modeling this distribution shift through a conditional Wasserstein ambiguity set, I characterize a distributionally robust ROC frontier and derive a finite-sample welfare-regret bound that governs the replacement decision and yields a feasible rule for when automation dominates human judgment.</p>
         </div>
       </details>
-
-      <div class="paper__links">
-        <a class="doclink" href="#">PDF</a>
-        <a class="doclink" href="#">Latest Draft</a>
-        <a class="doclink" href="#">Slides</a>
-        <a class="doclink" href="#">SSRN</a>
-      </div>
     </div>
   </section>
 
-  <!-- ============ WORKING PAPERS ============ -->
   <section class="section">
-    <div class="section__head"><h2 class="section-title" style="font-size:15px;">Working Papers</h2></div>
+    <div class="section__head"><h2 class="section-title" style="font-size:15px;">Selected Papers</h2></div>
 
     <article class="paper">
-      <h3 class="paper__title"><a href="#">Inferential Theory for Factor-Augmented Quantile Regression under Weak Loadings</a></h3>
+      <h3 class="paper__title">When Should Forecasts Be Equally Weighted? A Signal–Cost Diagnostic for Forecast Combination</h3>
       <p class="paper__meta">
         <span>Dingli Wang</span>
-        <span class="status">Under review, Journal of Econometrics</span>
+        <span class="status">Working Paper</span>
       </p>
       <details class="abstract">
         <summary><span class="chev">▶</span> Abstract</summary>
         <div class="abstract__body">
-          <p>$\sqrt{T}$-rate inference for factor-augmented quantile regression under weak loadings,
-          with a Procrustes-aligned split-panel jackknife for bias correction. The theory is applied
-          to U.S. inflation-at-risk.</p>
+          <p>Forecast combinations with estimated weights can fail to improve on equal weights when estimation error offsets the population gain from unequal weighting. I develop a signal–cost diagnostic that separates the gain from unequal weighting from the finite-sample cost of estimating the combination, with the goal of identifying when the data support moving away from equal weights.</p>
         </div>
       </details>
-      <div class="paper__links">
-        <a class="doclink" href="#">PDF</a>
-      </div>
     </article>
 
     <article class="paper">
-      <h3 class="paper__title"><a href="#">Robust Replacement of Human Decision Makers under Covariate Shift</a></h3>
+      <h3 class="paper__title">Median-Anchored Adjustment of Joint VaR–ES Forecasts</h3>
       <p class="paper__meta">
-        <span>Dingli Wang</span>
-        <span class="status">Under review, Journal of Econometrics</span>
+        <span>Dingli Wang and Tae-Hwy Lee</span>
+        <span class="status">Under Review, <em>Journal of Business &amp; Economic Statistics</em></span>
       </p>
       <details class="abstract">
         <summary><span class="chev">▶</span> Abstract</summary>
         <div class="abstract__body">
-          <p>When should a machine-learning algorithm replace a human decision maker once the deployment
-          environment differs from the one in which it was trained? Modeling the distribution shift
-          through a conditional Wasserstein ambiguity set, I characterize a distributionally robust ROC
-          frontier and derive a finite-sample welfare-regret bound that yields a feasible rule for when
-          automation dominates human judgment.</p>
+          <p>We study a low-dimensional post-estimation adjustment for joint Value-at-Risk and Expected Shortfall forecasts. The adjustment is anchored at the conditional median and is designed to improve joint tail-risk forecasts without re-estimating the underlying forecasting model.</p>
         </div>
       </details>
-      <div class="paper__links">
-        <a class="doclink" href="#">PDF</a>
-      </div>
     </article>
 
     <article class="paper">
-      <h3 class="paper__title"><a href="#">Forecast Combination with AI-Generated Narrative States: Bias, Correction, and Inference</a></h3>
+      <h3 class="paper__title">Adversarial Density Forecast for Macro-financial Risks</h3>
       <p class="paper__meta">
-        <span>Dingli Wang and Xinran Liu</span>
-        <span class="status">Under review, Journal of Econometrics</span>
+        <span>Dingli Wang and Tae-Hwy Lee</span>
+        <span class="status">Working Paper</span>
       </p>
       <details class="abstract">
         <summary><span class="chev">▶</span> Abstract</summary>
         <div class="abstract__body">
-          <p>Plug-in inference fails at first order when the weight-driving “narrative state” is
-          estimated from text; a block cross-fitting correction restores valid inference. The method
-          is applied to Federal Reserve communication.</p>
+          <p>We develop an adversarial density-forecasting approach for macro-financial risk in small samples. The method anchors training to economically relevant distributional features so that the resulting density forecasts remain stable while retaining the flexibility of adversarial learning.</p>
         </div>
       </details>
-      <div class="paper__links">
-        <a class="doclink" href="#">PDF</a>
-      </div>
-    </article>
-
-    <article class="paper">
-      <h3 class="paper__title"><a href="#">Generated Covariates and Inference for Heterogeneous Treatment Effects under a Scalar Factor Structure</a></h3>
-      <p class="paper__meta">
-        <span>Xinran Liu and Dingli Wang</span>
-        <span class="status">Under review, Journal of Econometrics</span>
-      </p>
-      <details class="abstract">
-        <summary><span class="chev">▶</span> Abstract</summary>
-        <div class="abstract__body">
-          <p>Plug-in CATE estimators inherit a contamination term that Neyman orthogonality does not
-          remove when conditioning covariates are generated; this is corrected via cross-fitting at
-          the covariate-generation stage.</p>
-        </div>
-      </details>
-      <div class="paper__links">
-        <a class="doclink" href="#">PDF</a>
-      </div>
-    </article>
-
-    <article class="paper">
-      <h3 class="paper__title"><a href="#">Localizing Distributional Granger Predictability by Wasserstein Projection</a></h3>
-      <p class="paper__meta">
-        <span>Xinran Liu and Dingli Wang</span>
-        <span class="status">Under review, Journal of Business &amp; Economic Statistics</span>
-      </p>
-      <details class="abstract">
-        <summary><span class="chev">▶</span> Abstract</summary>
-        <div class="abstract__body">
-          <p>A Wasserstein-projection test localizing whether a predictor enters the location versus
-          the tail of the conditional distribution, with weighted chi-square limit theory.</p>
-        </div>
-      </details>
-      <div class="paper__links">
-        <a class="doclink" href="#">PDF</a>
-      </div>
-    </article>
-
-    <article class="paper">
-      <h3 class="paper__title"><a href="papers/Sharp-Targeting-with-Generated-States.pdf">Sharp Targeting with Generated States: Boundary Traces and the Validation Frontier</a></h3>
-      <p class="paper__meta">
-        <span>Dingli Wang</span>
-        <span class="status">Working paper</span>
-      </p>
-      <details class="abstract">
-        <summary><span class="chev">▶</span> Abstract</summary>
-        <div class="abstract__body">
-          <p>Many policy rules rank units using generated scores. For sharp targeting, ordinary
-          prediction accuracy is the wrong validation criterion: errors far from the cutoff carry
-          little first-order welfare relevance, so the object that matters is boundary-local. I show
-          that fixed cutoffs depend on a welfare-weighted boundary trace, fixed-capacity rules on a
-          boundary covariance, and learned cutoffs on a residualized trace-slope. For learned cutoffs,
-          evaluation-sample cube-root uncertainty and root-$m$ validation uncertainty meet at the
-          frontier $m \asymp n^{2/3}$: validation error is first order there and negligible only when
-          $m \gg n^{2/3}$. For a finite-dimensional calibration layer over a fixed representation, I
-          provide primitive influence functions and feasible validation-adjusted inference.</p>
-        </div>
-      </details>
-      <div class="paper__links">
-        <a class="doclink" href="papers/Sharp-Targeting-with-Generated-States.pdf">PDF</a>
-      </div>
-    </article>
-
-    <article class="paper">
-      <h3 class="paper__title"><a href="#">When Should Forecasts Be Equally Weighted? A Signal–Cost Diagnostic for Forecast Combination</a></h3>
-      <p class="paper__meta">
-        <span>Dingli Wang</span>
-        <span class="status">Working paper</span>
-      </p>
-      <details class="abstract">
-        <summary><span class="chev">▶</span> Abstract</summary>
-        <div class="abstract__body">
-          <p>A signal–cost diagnostic for when adaptive forecast combination dominates simple equal
-          weights, with FRED-MD rolling-forecast evidence.</p>
-        </div>
-      </details>
-      <div class="paper__links">
-        <a class="doclink" href="#">PDF</a>
-      </div>
     </article>
   </section>
-
-  <!-- ============ WORK IN PROGRESS ============ -->
-  <section class="section">
-    <div class="section__head"><h2 class="section-title" style="font-size:15px;">Work in Progress</h2></div>
-    <ul class="clean measure">
-      <li class="paper" style="padding:14px 0;">
-        <strong style="font-family:var(--serif); font-weight:600;">Adversarial Macroeconomic Density Forecasts</strong>
-        <span class="muted small"> (with Tae-Hwy Lee)</span>
-        <span class="muted"> — a regularized conditional Wasserstein GAN (RcWGAN) for small-sample
-        macro-financial density forecasting, with a moment–quantile penalty.</span>
-      </li>
-      <li class="paper" style="padding:14px 0;">
-        <strong style="font-family:var(--serif); font-weight:600;">Anchored Tail-Spread Recalibration for Joint VaR–ES Forecasts</strong>
-        <span class="muted small"> (with Tae-Hwy Lee)</span>
-        <span class="muted"> — a one-parameter post-estimation layer that jointly recalibrates
-        Value-at-Risk and Expected Shortfall; S&amp;P 500 application.</span>
-      </li>
-    </ul>
-  </section>
-
 </main>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
-<script src="render-math.js" defer></script>
 </body>
 </html>
