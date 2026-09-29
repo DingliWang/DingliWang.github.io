@@ -3,72 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dingli Wang — Economics PhD Candidate</title>
-<meta name="description" content="Dingli Wang is a PhD candidate in Economics at UC Riverside working in econometric theory, time series econometrics, forecasting, and machine learning in economics.">
+<title>Dingli Wang | Economics Ph.D. Candidate</title>
+<meta name="description" content="Dingli Wang is a Ph.D. candidate in Economics at UC Riverside. Research fields: econometrics, time series econometrics, forecasting, and machine learning and AI in economics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="nav">
-  <div class="nav__inner">
+<header class="site-header">
+  <nav class="nav">
     <a class="nav__brand" href="index.html">Dingli Wang</a>
     <div class="nav__links">
-      <a href="index.html" aria-current="page">Home</a>
       <a href="research.html">Research</a>
       <a href="teaching.html">Teaching</a>
       <a href="cv.html">CV</a>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
 <main class="page">
-  <section class="hero">
-    <div>
-      <h1 class="hero__name">Dingli Wang</h1>
-      <p class="hero__role">PhD Candidate in Economics · University of California, Riverside</p>
-      <p class="hero__market">On the 2026–2027 Economics Job Market</p>
+  <section class="intro">
+    <h1>Dingli Wang</h1>
+    <p class="role">Ph.D. Candidate in Economics<br>University of California, Riverside</p>
+    <p class="market">2026&ndash;2027 Economics Job Market</p>
 
-      <div class="hero__bio">
-        <p>I am an econometrician working in econometric theory, time series, forecasting, and machine learning in economics. My research develops methods for decision and prediction problems in changing or imperfectly known environments.</p>
-      </div>
-
-      <div class="jmp" style="margin-top:24px; padding:22px 24px;">
-        <span class="tag">Job Market Paper</span>
-        <h2 class="jmp__title" style="font-size:21px; margin-top:12px;">
-          <a href="research.html#jmp">Robust Replacement of Human Decision Makers under Covariate Shift</a>
-        </h2>
-        <p class="status" style="margin:0 0 8px;">Revise and Resubmit, <em>Journal of Econometrics</em></p>
-        <p style="margin:0; color:var(--ink-soft); font-size:16px;">When should an algorithm replace a human decision maker when the environment faced at deployment differs from the environment observed in the data?</p>
-      </div>
-
-      <div class="row" style="margin-top:20px;">
-        <a class="btn btn--primary" href="research.html#jmp">Job Market Paper</a>
-        <a class="btn btn--ghost" href="cv.html">CV</a>
-        <a class="btn btn--ghost" href="research.html">Research</a>
-      </div>
+    <div class="intro__text">
+      <p>My research is in econometrics, time series, and forecasting. I study statistical decision and prediction problems in settings where the environment can change, samples are limited, or flexible methods are costly to estimate. My work includes human&ndash;algorithm comparison under covariate shift, forecast combination, density forecasting, and joint VaR&ndash;ES adjustment.</p>
     </div>
 
-    <div class="ph hero__photo" aria-label="Photo placeholder">Photo</div>
-  </section>
-
-  <section class="section" style="margin-top:64px;">
-    <div class="section__head"><h2 class="section-title">Research Fields</h2></div>
-    <div class="measure">
-      <dl class="dl">
-        <dt>Primary</dt><dd>Econometric Theory</dd>
-        <dt>Secondary</dt><dd>Time Series Econometrics; Forecasting; Machine Learning in Economics</dd>
-      </dl>
+    <div class="quick-links">
+      <a href="cv.html">CV</a>
+      <a href="research.html#jmp">Job Market Paper</a>
+      <a href="research.html">Research</a>
+      <a href="mailto:dwang177@ucr.edu">Email</a>
     </div>
   </section>
 
-  <section class="section">
-    <div class="section__head"><h2 class="section-title">Contact</h2></div>
-    <div class="contactlist">
-      <div><span class="lbl">Email</span><a href="mailto:dwang177@ucr.edu">dwang177@ucr.edu</a></div>
-      <div><span class="lbl">CV</span><a href="cv.html">Web CV</a></div>
-    </div>
+  <section class="home-section">
+    <h2>Research Fields</h2>
+    <p>Econometrics &middot; Time Series Econometrics &middot; Forecasting &middot; Machine Learning and AI in Economics</p>
+  </section>
+
+  <section class="home-section" id="jmp">
+    <div class="eyebrow">Job Market Paper</div>
+    <h2 class="featured-title"><a href="research.html#jmp">Robust Replacement of Human Decision Makers under Covariate Shift</a></h2>
+    <p class="status-line">Revise and Resubmit, <em>Journal of Econometrics</em></p>
+    <p>When should a machine-learning algorithm replace a human decision maker when the deployment distribution differs from the training distribution?</p>
+  </section>
+
+  <section class="home-section">
+    <h2>Contact</h2>
+    <p><a href="mailto:dwang177@ucr.edu">dwang177@ucr.edu</a></p>
   </section>
 </main>
 </body>
