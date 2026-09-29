@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research | Dingli Wang</title>
-<meta name="description" content="Research by Dingli Wang in econometrics, time series econometrics, forecasting, and machine learning in economics.">
+<meta name="description" content="Research by Dingli Wang in econometrics, forecasting, and machine learning and AI in economics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
@@ -21,11 +21,10 @@
     </div>
   </nav>
 </header>
-
 <main class="page">
   <header class="page-header">
     <h1>Research</h1>
-    <p>Econometrics, time series econometrics, forecasting, and machine learning and AI in economics.</p>
+    <p>Econometrics, forecasting, and machine learning and AI in economics.</p>
   </header>
 
   <section class="papers">
@@ -36,7 +35,7 @@
         <span>Dingli Wang</span>
         <span>Revise and Resubmit, <em>Journal of Econometrics</em></span>
       </div>
-      <p class="paper__summary">I study when a machine-learning algorithm should replace a human decision maker when the deployment distribution differs from the training distribution. I construct a thresholdwise robust ROC frontier using a Wasserstein ambiguity set and derive a finite-sample welfare-regret bound for replacement decisions.</p>
+      <p class="paper__summary">I study when an algorithm should replace a human decision maker if the deployment environment differs from the training environment. A distributionally robust ROC framework compares classification performance across a set of possible deployment distributions and examines the consequences of uncertainty for replacement decisions.</p>
       <details>
         <summary>Abstract</summary>
         <p>I study when a machine-learning algorithm should replace a human decision maker once the deployment environment differs from the environment in which it was trained. The analysis builds a distributionally robust ROC frontier from worst-case true-positive and false-positive rates over a Wasserstein ambiguity set. For Lipschitz score functions, I derive a finite-sample welfare-regret bound that links frontier estimation error to replacement mistakes and welfare loss.</p>
@@ -45,10 +44,8 @@
 
     <article class="paper">
       <h2>Median-Anchored Adjustment of Joint VaR&ndash;ES Forecasts <span class="coauthor">with Tae-Hwy Lee</span></h2>
-      <div class="paper__meta">
-        <span>Under Review, <em>Journal of Business &amp; Economic Statistics</em></span>
-      </div>
-      <p class="paper__summary">We study a median-anchored rule that multiplies the distances from the fitted median to Value-at-Risk and Expected Shortfall by a common positive multiplier. The rule preserves VaR&ndash;ES ordering and has a closed-form spread-weighted quantile estimator.</p>
+      <div class="paper__meta"><span>Under Review, <em>Journal of Business &amp; Economic Statistics</em></span></div>
+      <p class="paper__summary">A one-parameter adjustment to existing tail-risk forecasts that rescales their distances from the fitted median, preserves VaR&ndash;ES ordering, and has a closed-form spread-weighted quantile estimator.</p>
       <details>
         <summary>Abstract</summary>
         <p>Risk managers often work with a fitted forecasting model that cannot be replaced even when its tail forecasts need adjustment. We study a median-anchored adjustment that rescales the fitted median-to-VaR and median-to-ES distances by a common positive multiplier. The paper establishes large-sample properties, gives a next-origin coverage bound, and evaluates the method in rolling equity-index forecasts.</p>
@@ -57,22 +54,16 @@
 
     <article class="paper">
       <h2>Adversarial Density Forecast for Macro-financial Risks <span class="coauthor">with Tae-Hwy Lee</span></h2>
-      <div class="paper__meta">
-        <span>Working Paper</span>
-      </div>
-      <p class="paper__summary">We study conditional adversarial density forecasts in short macroeconomic samples. The method adds distributional anchors based on the variance and selected quantiles to a conditional Wasserstein generative model, with the goal of reducing sensitivity to network size and training randomness.</p>
+      <p class="paper__summary">An anchored conditional Wasserstein generative model for density forecasting in short macroeconomic samples, with theory and evidence on distributional accuracy and sensitivity to training randomness.</p>
       <details>
         <summary>Abstract</summary>
-        <p>Short estimation windows can make adversarial density forecasts sensitive to network size and training randomness. We study an anchored conditional Wasserstein generative model that matches selected distributional features of simulated and observed outcomes. The paper develops prediction-risk bounds and evaluates the method in simulations and rolling forecasts of industrial production, unemployment, and inflation.</p>
+        <p>Short estimation windows can make adversarial density forecasts sensitive to network size and training randomness. We study an anchored conditional Wasserstein generative model that matches selected distributional features of simulated and observed outcomes. The paper develops prediction-risk bounds and evaluates the method in simulations and rolling forecasts of macroeconomic variables.</p>
       </details>
     </article>
 
     <article class="paper">
-      <h2>When Should Forecasts Be Equally Weighted? Signal Recovery and Estimation Costs <span class="coauthor">with Xinran Liu</span></h2>
-      <div class="paper__meta">
-        <span>Working Paper</span>
-      </div>
-      <p class="paper__summary">We study when estimated forecast-combination weights improve on equal weighting. The analysis separates recovered predictive signal from estimation costs and examines how tuning and component estimation affect the comparison.</p>
+      <h2>When Should Forecasts Be Equally Weighted? Signal Recovery and Estimation Costs</h2>
+      <p class="paper__summary">A comparison of equal and estimated forecast weights that separates recovered predictive signal from estimation costs, accounts for tuning and component estimation, and uses past out-of-sample losses to guide the choice.</p>
       <details>
         <summary>Abstract</summary>
         <p>Whether estimated combination weights improve on equal weights depends not only on the signal in forecast differences, but also on how much of that signal the forecasting procedure recovers and at what cost. We express the expected mean squared forecast error gain in terms of signal recovery and estimation costs and use past out-of-sample loss differences to guide the choice between equal weights and an estimated-weight combination.</p>
