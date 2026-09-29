@@ -3,89 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research — Dingli Wang</title>
-<meta name="description" content="Research of Dingli Wang — econometric theory, time series econometrics, forecasting, and machine learning in economics.">
+<title>Research | Dingli Wang</title>
+<meta name="description" content="Research by Dingli Wang in econometrics, time series econometrics, forecasting, and machine learning in economics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="nav">
-  <div class="nav__inner">
+<header class="site-header">
+  <nav class="nav">
     <a class="nav__brand" href="index.html">Dingli Wang</a>
     <div class="nav__links">
-      <a href="index.html">Home</a>
       <a href="research.html" aria-current="page">Research</a>
       <a href="teaching.html">Teaching</a>
       <a href="cv.html">CV</a>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
 <main class="page">
-  <section class="section" id="jmp" style="margin-top:0;">
-    <div class="jmp">
-      <span class="tag">Job Market Paper</span>
-      <h1 class="jmp__title">Robust Replacement of Human Decision Makers under Covariate Shift</h1>
-      <p class="paper__meta" style="margin-bottom:14px;">
-        <span>Dingli Wang</span>
-        <span class="status">Revise and Resubmit, <em>Journal of Econometrics</em></span>
-      </p>
-      <p class="measure" style="color:var(--ink-soft);">
-        When should a machine-learning algorithm replace a human decision maker once the deployment environment differs from the environment in which it was trained?
-      </p>
-      <details class="abstract" open>
-        <summary><span class="chev">▶</span> Abstract</summary>
-        <div class="abstract__body">
-          <p>I study when a machine-learning algorithm should replace a human decision maker once the deployment environment differs from the environment in which it was trained. Modeling this distribution shift through a conditional Wasserstein ambiguity set, I characterize a distributionally robust ROC frontier and derive a finite-sample welfare-regret bound that governs the replacement decision and yields a feasible rule for when automation dominates human judgment.</p>
-        </div>
-      </details>
-    </div>
-  </section>
+  <header class="page-header">
+    <h1>Research</h1>
+    <p>Econometrics, time series econometrics, forecasting, and machine learning and AI in economics.</p>
+  </header>
 
-  <section class="section">
-    <div class="section__head"><h2 class="section-title" style="font-size:15px;">Selected Papers</h2></div>
-
-    <article class="paper">
-      <h3 class="paper__title">When Should Forecasts Be Equally Weighted? A Signal–Cost Diagnostic for Forecast Combination</h3>
-      <p class="paper__meta">
+  <section class="papers">
+    <article class="paper paper--jmp" id="jmp">
+      <div class="eyebrow">Job Market Paper</div>
+      <h2>Robust Replacement of Human Decision Makers under Covariate Shift</h2>
+      <div class="paper__meta">
         <span>Dingli Wang</span>
-        <span class="status">Working Paper</span>
-      </p>
-      <details class="abstract">
-        <summary><span class="chev">▶</span> Abstract</summary>
-        <div class="abstract__body">
-          <p>Forecast combinations with estimated weights can fail to improve on equal weights when estimation error offsets the population gain from unequal weighting. I develop a signal–cost diagnostic that separates the gain from unequal weighting from the finite-sample cost of estimating the combination, with the goal of identifying when the data support moving away from equal weights.</p>
-        </div>
+        <span>Revise and Resubmit, <em>Journal of Econometrics</em></span>
+      </div>
+      <p class="paper__summary">I study when a machine-learning algorithm should replace a human decision maker when the deployment distribution differs from the training distribution. I construct a thresholdwise robust ROC frontier using a Wasserstein ambiguity set and derive a finite-sample welfare-regret bound for replacement decisions.</p>
+      <details>
+        <summary>Abstract</summary>
+        <p>I study when a machine-learning algorithm should replace a human decision maker once the deployment environment differs from the environment in which it was trained. The analysis builds a distributionally robust ROC frontier from worst-case true-positive and false-positive rates over a Wasserstein ambiguity set. For Lipschitz score functions, I derive a finite-sample welfare-regret bound that links frontier estimation error to replacement mistakes and welfare loss.</p>
       </details>
     </article>
 
     <article class="paper">
-      <h3 class="paper__title">Median-Anchored Adjustment of Joint VaR–ES Forecasts</h3>
-      <p class="paper__meta">
-        <span>Dingli Wang and Tae-Hwy Lee</span>
-        <span class="status">Under Review, <em>Journal of Business &amp; Economic Statistics</em></span>
-      </p>
-      <details class="abstract">
-        <summary><span class="chev">▶</span> Abstract</summary>
-        <div class="abstract__body">
-          <p>We study a low-dimensional post-estimation adjustment for joint Value-at-Risk and Expected Shortfall forecasts. The adjustment is anchored at the conditional median and is designed to improve joint tail-risk forecasts without re-estimating the underlying forecasting model.</p>
-        </div>
+      <h2>Median-Anchored Adjustment of Joint VaR&ndash;ES Forecasts <span class="coauthor">with Tae-Hwy Lee</span></h2>
+      <div class="paper__meta">
+        <span>Under Review, <em>Journal of Business &amp; Economic Statistics</em></span>
+      </div>
+      <p class="paper__summary">We study a median-anchored rule that multiplies the distances from the fitted median to Value-at-Risk and Expected Shortfall by a common positive multiplier. The rule preserves VaR&ndash;ES ordering and has a closed-form spread-weighted quantile estimator.</p>
+      <details>
+        <summary>Abstract</summary>
+        <p>Risk managers often work with a fitted forecasting model that cannot be replaced even when its tail forecasts need adjustment. We study a median-anchored adjustment that rescales the fitted median-to-VaR and median-to-ES distances by a common positive multiplier. The paper establishes large-sample properties, gives a next-origin coverage bound, and evaluates the method in rolling equity-index forecasts.</p>
       </details>
     </article>
 
     <article class="paper">
-      <h3 class="paper__title">Adversarial Density Forecast for Macro-financial Risks</h3>
-      <p class="paper__meta">
-        <span>Dingli Wang and Tae-Hwy Lee</span>
-        <span class="status">Working Paper</span>
-      </p>
-      <details class="abstract">
-        <summary><span class="chev">▶</span> Abstract</summary>
-        <div class="abstract__body">
-          <p>We develop an adversarial density-forecasting approach for macro-financial risk in small samples. The method anchors training to economically relevant distributional features so that the resulting density forecasts remain stable while retaining the flexibility of adversarial learning.</p>
-        </div>
+      <h2>Adversarial Density Forecast for Macro-financial Risks <span class="coauthor">with Tae-Hwy Lee</span></h2>
+      <div class="paper__meta">
+        <span>Working Paper</span>
+      </div>
+      <p class="paper__summary">We study conditional adversarial density forecasts in short macroeconomic samples. The method adds distributional anchors based on the variance and selected quantiles to a conditional Wasserstein generative model, with the goal of reducing sensitivity to network size and training randomness.</p>
+      <details>
+        <summary>Abstract</summary>
+        <p>Short estimation windows can make adversarial density forecasts sensitive to network size and training randomness. We study an anchored conditional Wasserstein generative model that matches selected distributional features of simulated and observed outcomes. The paper develops prediction-risk bounds and evaluates the method in simulations and rolling forecasts of industrial production, unemployment, and inflation.</p>
+      </details>
+    </article>
+
+    <article class="paper">
+      <h2>When Should Forecasts Be Equally Weighted? Signal Recovery and Estimation Costs <span class="coauthor">with Xinran Liu</span></h2>
+      <div class="paper__meta">
+        <span>Working Paper</span>
+      </div>
+      <p class="paper__summary">We study when estimated forecast-combination weights improve on equal weighting. The analysis separates recovered predictive signal from estimation costs and examines how tuning and component estimation affect the comparison.</p>
+      <details>
+        <summary>Abstract</summary>
+        <p>Whether estimated combination weights improve on equal weights depends not only on the signal in forecast differences, but also on how much of that signal the forecasting procedure recovers and at what cost. We express the expected mean squared forecast error gain in terms of signal recovery and estimation costs and use past out-of-sample loss differences to guide the choice between equal weights and an estimated-weight combination.</p>
       </details>
     </article>
   </section>
