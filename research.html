@@ -17,7 +17,7 @@
     <div class="nav__links">
       <a href="research.html" aria-current="page">Research</a>
       <a href="teaching.html">Teaching</a>
-      <a href="cv.html">CV</a>
+      <a href="assets/Dingli_Wang_CV.pdf" target="_blank" rel="noopener">CV</a>
     </div>
   </nav>
 </header>
@@ -32,41 +32,36 @@
       <div class="eyebrow">Job Market Paper</div>
       <h2>Robust Replacement of Human Decision Makers under Covariate Shift</h2>
       <div class="paper__meta">
-        <span>Dingli Wang</span>
         <span>Revise and Resubmit, <em>Journal of Econometrics</em></span>
       </div>
-      <p class="paper__summary">I study when an algorithm should replace a human decision maker if the deployment environment differs from the training environment. A distributionally robust ROC framework compares classification performance across a set of possible deployment distributions and examines the consequences of uncertainty for replacement decisions.</p>
       <details>
         <summary>Abstract</summary>
-        <p>I study when a machine-learning algorithm should replace a human decision maker once the deployment environment differs from the environment in which it was trained. The analysis builds a distributionally robust ROC frontier from worst-case true-positive and false-positive rates over a Wasserstein ambiguity set. For Lipschitz score functions, I derive a finite-sample welfare-regret bound that links frontier estimation error to replacement mistakes and welfare loss.</p>
+        <p>We study the replacement of human decision makers when the deployment distribution is uncertain. Human performance is estimated from historical decisions, while a label-preserving Wasserstein neighborhood describes changes in the predictors used by the machine. Under stable human error rates, a robust ROC frontier identifies fixed thresholds that satisfy a posterior requirement of no deterioration in either error rate. We establish statistical properties of this frontier and bound welfare relative to retaining the human and to a deployment matched-FPR benchmark. The welfare comparison separates differences in whom the two policies replace from differences in their selected thresholds; the latter can persist as estimation improves. Simulations show how greater protection reduces both gains near the reference environment and losses after larger shifts. An income-prediction illustration with synthetic decision makers yields complete retention at the positive budgets considered. A separate local-perturbation extension describes the statistical and computational issues for tree scores.</p>
       </details>
     </article>
 
     <article class="paper">
       <h2>Median-Anchored Adjustment of Joint VaR&ndash;ES Forecasts <span class="coauthor">with Tae-Hwy Lee</span></h2>
       <div class="paper__meta"><span>Under Review, <em>Journal of Business &amp; Economic Statistics</em></span></div>
-      <p class="paper__summary">A one-parameter adjustment to existing tail-risk forecasts that rescales their distances from the fitted median, preserves VaR&ndash;ES ordering, and has a closed-form spread-weighted quantile estimator.</p>
       <details>
         <summary>Abstract</summary>
-        <p>Risk managers often work with a fitted forecasting model that cannot be replaced even when its tail forecasts need adjustment. We study a median-anchored adjustment that rescales the fitted median-to-VaR and median-to-ES distances by a common positive multiplier. The paper establishes large-sample properties, gives a next-origin coverage bound, and evaluates the method in rolling equity-index forecasts.</p>
+        <p>Risk managers often work with a fitted forecasting model they cannot replace even when its tail forecasts need adjustment. We propose a median-anchored rule that multiplies the distances from the fitted median to Value-at-Risk (VaR) and Expected Shortfall (ES) by a common positive multiplier. The rule preserves VaR&ndash;ES ordering, and minimizing VaR check loss gives a closed-form weighted-quantile estimator. We establish consistency, give an asymptotic distribution under high-level conditions accounting for baseline estimation, and derive a VaR coverage-error bound at the forecast origin. When the same multiplier correctly adjusts both VaR and ES, the adjusted pair has lower conditional zero-homogeneous Fissler&ndash;Ziegel (FZ0) risk at that origin. Monte Carlo experiments examine this condition and several forms of misspecification. In rolling S&amp;P&nbsp;500 forecasts the adjustment lowers FZ0 loss in all four GARCH cells, each pairwise significant, with the largest and most robust gain, 10.4%, for Gaussian GARCH at the 1% tail; the 5% gains do not survive the most conservative family-wise adjustments. A quantile-regression baseline marks the boundary: when the fitted tail is already flexible, one multiplier adds little. Filtered historical simulation quantifies what standardized residuals and conditional scales add when available.</p>
       </details>
     </article>
 
     <article class="paper">
       <h2>Adversarial Density Forecast for Macro-financial Risks <span class="coauthor">with Tae-Hwy Lee</span></h2>
-      <p class="paper__summary">An anchored conditional Wasserstein generative model for density forecasting in short macroeconomic samples, with theory and evidence on distributional accuracy and sensitivity to training randomness.</p>
       <details>
         <summary>Abstract</summary>
-        <p>Short estimation windows can make adversarial density forecasts sensitive to network size and training randomness. We study an anchored conditional Wasserstein generative model that matches selected distributional features of simulated and observed outcomes. The paper develops prediction-risk bounds and evaluates the method in simulations and rolling forecasts of macroeconomic variables.</p>
+        <p>Short estimation windows can make adversarial density forecasts sensitive to network size and training randomness. We study a conditional Wasserstein generative adversarial network with a penalty that matches the variance and five quantiles of simulated and observed outcomes within training blocks. We analyze the expected penalty with finitely many simulation draws. Its variance and median components bound average generated second moments and, under weak dependence and approximation conditions, yield prediction risk bounds that also control excess expected continuous ranked probability score (CRPS). After reducing network size, the penalty lowers Wasserstein error in all four simulation settings and average variation across fits by about 25 percent. A relativistic GAN provides competitive accuracy but greater variation across fits. In three macroeconomic applications, the penalty improves CRPS point estimates in five of six same-capacity comparisons; classical benchmarks remain strong and short-window tail coverage is poor.</p>
       </details>
     </article>
 
     <article class="paper">
       <h2>When Should Forecasts Be Equally Weighted? Signal Recovery and Estimation Costs</h2>
-      <p class="paper__summary">A comparison of equal and estimated forecast weights that separates recovered predictive signal from estimation costs, accounts for tuning and component estimation, and uses past out-of-sample losses to guide the choice.</p>
       <details>
         <summary>Abstract</summary>
-        <p>Whether estimated combination weights improve on equal weights depends not only on the signal in forecast differences, but also on how much of that signal the forecasting procedure recovers and at what cost. We express the expected mean squared forecast error gain in terms of signal recovery and estimation costs and use past out-of-sample loss differences to guide the choice between equal weights and an estimated-weight combination.</p>
+        <p>Whether estimated combination weights improve on equal weights depends not only on the signal in forecast differences, but also on how much of that signal the forecasting procedure recovers and at what cost. We express the expected mean squared forecast error (MSFE) gain in terms of signal recovery and estimation costs, giving a boundary for when a specified forecasting procedure improves on equal weighting. We complement this theoretical boundary with a decision rule based on past out-of-sample loss differences to choose between equal weights and the estimated weights. Under stationarity and weak dependence, with estimation windows fixed, the probability of choosing the lower-MSFE method tends to one as past evaluations accumulate, provided the two population MSFEs differ. Simulations and macroeconomic applications illustrate the comparison and the choices of equal and estimated weights.</p>
       </details>
     </article>
   </section>
