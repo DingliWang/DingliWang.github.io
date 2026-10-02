@@ -152,7 +152,7 @@ a:hover { text-decoration: underline; }
 }
 .ssrn-s2 {
   display: inline-block;
-  margin-left: -0.055em;
+  margin-left: -0.11em;
 }
 .page-header p { margin: 0; color: #404448; font-size: 18px; }
 .papers { max-width: var(--measure); margin-top: 42px; }
