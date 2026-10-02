@@ -146,6 +146,10 @@ a:hover { text-decoration: underline; }
   color: var(--link);
   font-weight: 650;
 }
+.ssrn-link {
+  font-kerning: none;
+  letter-spacing: -0.015em;
+}
 .page-header p { margin: 0; color: #404448; font-size: 18px; }
 .papers { max-width: var(--measure); margin-top: 42px; }
 .paper { padding: 28px 0; border-top: 1px solid var(--rule); }
