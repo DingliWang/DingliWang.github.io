@@ -30,20 +30,22 @@
   <section class="papers">
     <article class="paper paper--jmp" id="jmp">
       <div class="eyebrow">Job Market Paper</div>
-      <h2>Robust Replacement of Human Decision Makers under Covariate Shift</h2>
+      <h2>Robust Replacement of Human Decision Makers under Distribution Shift</h2>
       <div class="paper__meta">
         <span>Revise and Resubmit, <em>Journal of Econometrics</em></span>
+        <a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7546458" target="_blank" rel="noopener">SSRN</a>
+        <a class="paper-link" href="https://papers.ssrn.com/sol3/Delivery.cfm/7546458.pdf?abstractid=7546458&amp;mirid=1" target="_blank" rel="noopener">PDF</a>
       </div>
-      <p class="paper__summary">I study when an algorithm should replace a human decision maker if the deployment environment differs from the training environment. A distributionally robust ROC framework compares classification performance across a set of possible deployment distributions and examines the consequences of uncertainty for replacement decisions.</p>
+      <p class="paper__summary">I study when a machine should replace a human before its deployment distribution is known. A robust ROC frontier evaluates fixed thresholds over a label-preserving Wasserstein set and separates the replacement decision from threshold choice.</p>
       <details>
         <summary>Abstract</summary>
-        <p>We study the replacement of human decision makers when the deployment distribution is uncertain. Human performance is estimated from historical decisions, while a label-preserving Wasserstein neighborhood describes changes in the predictors used by the machine. Under stable human error rates, a robust ROC frontier identifies fixed thresholds that satisfy a posterior requirement of no deterioration in either error rate. We establish statistical properties of this frontier and bound welfare relative to retaining the human and to a deployment matched-FPR benchmark. The welfare comparison separates differences in whom the two policies replace from differences in their selected thresholds; the latter can persist as estimation improves. Simulations show how greater protection reduces both gains near the reference environment and losses after larger shifts. An income-prediction illustration with synthetic decision makers yields complete retention at the positive budgets considered. A separate local-perturbation extension describes the statistical and computational issues for tree scores.</p>
+        <p>We study when a machine should replace a human before its deployment distribution is known. A robust receiver operating characteristic frontier evaluates fixed thresholds over a label-preserving Wasserstein set, while historical decisions give a posterior for human performance, assumed stable across environments. Replacement requires a specified posterior probability of no higher false-positive rate and no lower true-positive rate throughout the set. We establish uniform frontier estimation and welfare bounds that separate whom to replace from which threshold to deploy. Threshold choice can leave a persistent welfare difference from a deployment benchmark that matches the human&rsquo;s false-positive rate, even with a known frontier and increasingly informative histories. For logistic scores, average and per-observation displacement budgets affect threshold probabilities at square-root and linear local orders, respectively. Simulations holding the score fixed show partial replacement and positive mean gains at evaluated distributions within the per-observation set, while the corresponding average budgets yield retention. Choosing thresholds by a welfare lower bound within the same posterior feasible set improves mean deployment welfare in this design.</p>
       </details>
     </article>
 
     <article class="paper">
       <h2>Median-Anchored Adjustment of Joint VaR&ndash;ES Forecasts <span class="coauthor">with Tae-Hwy Lee</span></h2>
-      <div class="paper__meta"><span>Under Review, <em>Journal of Business &amp; Economic Statistics</em></span><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7217398" target="_blank" rel="noopener">SSRN</a></div>
+      <div class="paper__meta"><span>Under Review, <em>Journal of Business &amp; Economic Statistics</em></span><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7217398" target="_blank" rel="noopener">SSRN</a><a class="paper-link" href="https://papers.ssrn.com/sol3/Delivery.cfm/7217398.pdf?abstractid=7217398&amp;mirid=1" target="_blank" rel="noopener">PDF</a></div>
       <p class="paper__summary">A one-parameter adjustment to existing tail-risk forecasts that rescales their distances from the fitted median, preserves VaR&ndash;ES ordering, and has a closed-form spread-weighted quantile estimator.</p>
       <details>
         <summary>Abstract</summary>
