@@ -258,3 +258,11 @@ details p {
 .teaching-sample__links { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--sans); font-size: 13.5px; font-weight: 600; }
 .teaching-materials__note { color: var(--muted); font-size: 14px; }
 .teaching-materials__statement { margin-top: 16px !important; font-family: var(--sans); font-size: 14px; font-weight: 600; }
+
+/* Link to the standalone research statement */
+.page-header .statement-resource {
+  margin: 14px 0 0;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+}
