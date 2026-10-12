@@ -249,3 +249,12 @@ details p {
   .page { max-width: none; padding: 0; }
   a { color: #000; }
 }
+/* Teaching portfolio samples */
+.teaching-materials__intro { margin-bottom: 12px !important; }
+.teaching-sample { padding: 16px 0; border-top: 1px solid #eeeeee; }
+.teaching-sample__title { font-weight: 600; line-height: 1.45; }
+.teaching-sample__meta { margin-top: 3px; color: var(--muted); font-family: var(--sans); font-size: 13px; }
+.teaching-sample p { margin: 7px 0 8px; }
+.teaching-sample__links { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--sans); font-size: 13.5px; font-weight: 600; }
+.teaching-materials__note { color: var(--muted); font-size: 14px; }
+.teaching-materials__statement { margin-top: 16px !important; font-family: var(--sans); font-size: 14px; font-weight: 600; }

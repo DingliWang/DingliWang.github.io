@@ -1,0 +1,64 @@
+---
+title: "From a Scatterplot to a Regression Line"
+subtitle: "ECON 101 | Statistics for Economics | Selected RStudio Exercise"
+author: "Dingli Wang"
+format:
+  html:
+    toc: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+This independently prepared example adapts the RStudio and regression topics from the Fall 2025 ECON 101 labs, where I served as a teaching assistant. The observations are **hypothetical**, not Lending Club loan records or student data.
+
+## 1. Explore the relationship
+
+We observe 12 illustrative households. Let `income_k` be annual income in thousands of dollars and `payment` be a monthly loan payment in dollars.
+
+```{r}
+loans <- data.frame(
+  income_k = c(36, 45, 50, 56, 61, 68, 74, 80, 88, 96, 108, 122),
+  payment = c(260, 375, 290, 430, 335, 505, 460, 490, 390, 650, 550, 695)
+)
+head(loans)
+```
+
+Make a scatterplot and fit a straight line.
+
+```{r}
+fit_k <- lm(payment ~ income_k, data = loans)
+plot(loans$income_k, loans$payment,
+     xlab = "Annual income ($1,000s)",
+     ylab = "Monthly loan payment ($)", pch = 19)
+abline(fit_k, col = "steelblue", lwd = 2)
+round(coef(fit_k), 3)
+summary(fit_k)$r.squared
+```
+
+**Interpretation.** The estimated slope is approximately 4.459. An additional $1,000 in annual income is associated with about $4.46 higher monthly payment in these illustrative observations. Association is not causation.
+
+## 2. Change the units of income
+
+Create annual income in dollars and re-estimate the regression.
+
+```{r}
+loans$income_dollars <- loans$income_k * 1000
+fit_d <- lm(payment ~ income_dollars, data = loans)
+round(coef(fit_d), 6)
+all.equal(as.numeric(fitted(fit_k)), as.numeric(fitted(fit_d)))
+```
+
+The coefficient is smaller because one unit of the new regressor is one dollar, rather than one thousand dollars. The fitted values are identical.
+
+## 3. Explain the output
+
+1. Interpret the slope when income is measured in dollars and when it is measured in thousands of dollars.
+2. Predict the payment at $75,000 income with either model. Why are the predictions the same?
+3. What does the model's $R^2$ describe? Does it establish a causal relationship?
+4. Name two variables, such as loan principal or interest rate, that could affect monthly payments and complicate causal interpretation.
+
+```{r}
+predict(fit_k, newdata = data.frame(income_k = 75))
+```
