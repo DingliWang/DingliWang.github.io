@@ -29,7 +29,7 @@
   \vspace{2pt}
   {\small Department of Economics, University of California, Riverside}\par
   {\small\href{mailto:dingli.wang@email.ucr.edu}{dingli.wang@email.ucr.edu}\quad\textbar\quad
-  \href{https://dingliwang.github.io/}{dingliwang.github.io}}\par
+  \href{https://dingliwang.github.io/}{dingliwang.github.io}\quad\textbar\quad\href{https://ssrn.com/author=10994248}{SSRN}}\par
   \vspace{4pt}\hrule height 0.4pt\vspace{9pt}
 }
 \newcommand{\coauthor}[1]{{\normalfont (with #1)}}
@@ -42,17 +42,17 @@
 \titlespacing*{\section}{0pt}{12pt}{7pt}
 \newcommand{\cvrow}[2]{\begin{tabularx}{\textwidth}{@{}Xr@{}}#1&#2\end{tabularx}\par}
 \newcommand{\paper}[3]{\needspace{6\baselineskip}\textbf{#1}\par {#2}\par {\small #3}\par}
-\lfoot{\small Updated October 12, 2026}
+\lfoot{\small Updated October 13, 2026}
 \cfoot{}
 \rfoot{\small\thepage}
-\fancypagestyle{plain}{\fancyhf{}\lfoot{\small Updated October 12, 2026}\rfoot{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
+\fancypagestyle{plain}{\fancyhf{}\lfoot{\small Updated October 13, 2026}\rfoot{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
 \begin{document}
 \thispagestyle{plain}
 {\fontsize{25}{28}\selectfont\bfseries Dingli Wang}\par
 \vspace{3pt}
 Department of Economics, University of California, Riverside\par
 \href{mailto:dingli.wang@email.ucr.edu}{dingli.wang@email.ucr.edu}\quad\textbar\quad (951)~231--0895\quad\textbar\quad
-\href{https://dingliwang.github.io/}{dingliwang.github.io}
+\href{https://dingliwang.github.io/}{dingliwang.github.io}\quad\textbar\quad\href{https://ssrn.com/author=10994248}{SSRN}
 
 \vspace{7pt}
 {\small
@@ -72,7 +72,7 @@ Joseph Cummins & Gary Kuzas\\
 \cvrow{\textbf{Tianjin University of Finance and Economics} --- B.S. in Economic Statistics}{2018}
 
 \section{Research Fields}
-Econometrics; Forecasting; Machine Learning and AI in Economics
+Econometrics; Financial Econometrics; Forecasting; Machine Learning and AI in Economics
 
 \section{Research Papers}
 
@@ -83,10 +83,14 @@ Econometrics; Forecasting; Machine Learning and AI in Economics
 \end{tabularx}
 {\textit{Revise and resubmit, Journal of Econometrics}}\par
 {\small
-I study when an algorithm should replace a human decision maker if the deployment
-environment differs from the training environment. A distributionally robust ROC
-framework compares classification performance across a set of possible deployment
-distributions and examines the consequences of uncertainty for replacement decisions.
+I study when a machine should replace a human decision maker before its deployment distribution is known. Historical
+decisions provide a posterior for human error rates, assumed stable across environments. A robust receiver operating
+characteristic frontier identifies fixed machine thresholds satisfying a posterior requirement of no deterioration in either
+error rate over a label-preserving Wasserstein set. I establish uniform frontier estimation and welfare bounds that separate
+replacement decisions from threshold choice. Even with a known frontier and increasingly informative human histories,
+threshold choice can leave a persistent welfare gap from a benchmark that matches the human's false-positive rate. Simulations
+show how average and per-observation displacement restrictions affect replacement. Within the same posterior feasible set,
+choosing thresholds by a welfare lower bound improves mean deployment welfare in this design.
 }\par
 
 \vspace{6pt}
@@ -114,7 +118,7 @@ and sensitivity to training randomness.}
 \paper
 {When Should Forecasts Be Equally Weighted? Signal Recovery and Estimation Costs}
  %{\small\textnormal{with Xinran Liu}}}
-{}
+{\textit{Under review, International Journal of Forecasting}}
 {A comparison of equal and estimated forecast weights that separates recovered
 predictive signal from estimation costs, accounts for tuning and component estimation,
 and uses past out-of-sample losses to guide the choice.}
