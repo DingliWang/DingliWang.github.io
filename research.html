@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20261015-wide">
+<link rel="stylesheet" href="styles.css?v=20261015-papers">
 </head>
 <body>
 <header class="site-header">
@@ -46,11 +46,8 @@
         <a class="paper-link ssrn-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7546458" target="_blank" rel="noopener">S<span class="ssrn-s2">S</span>RN</a>
         <a class="paper-link" href="papers/Robust-Replacement-of-Human-Decision-Makers-under-Distribution-Shift.pdf" target="_blank" rel="noopener">PDF</a>
       </div>
-      <p class="paper__summary">I study when a machine should replace a human before its deployment distribution is known. A robust ROC frontier evaluates fixed thresholds over a label-preserving Wasserstein set and separates the replacement decision from threshold choice.</p>
-      <details>
-        <summary>Abstract</summary>
-        <p>We study when a machine should replace a human decision maker before the deployment distribution is known. Historical decisions provide a posterior for human error rates, which are assumed stable across environments. A robust receiver operating characteristic frontier evaluates fixed machine thresholds over a label-preserving Wasserstein set. Replacement requires a specified posterior probability that the machine has no higher false-positive rate and no lower true-positive rate than the human throughout the set. We show that the estimated frontier converges uniformly and derive welfare bounds that separate replacement decisions from threshold choice. Even with a known frontier and increasingly informative human histories, threshold choice can leave a persistent welfare gap from a benchmark matching the human’s false-positive rate at deployment. In simulations with a fixed score, some per-observation displacement bounds allow partial replacement with positive mean welfare gains over retention at evaluated distributions within the corresponding sets; average budgets of the same numerical sizes lead to complete retention. Among thresholds satisfying the same posterior requirement, welfare-based choice improves mean deployment welfare relative to probability maximization in these simulations.</p>
-      </details>
+      <h3 class="paper__abstract-heading">Abstract</h3>
+      <p class="paper__abstract">We study when a machine should replace a human decision maker before the deployment distribution is known. Historical decisions provide a posterior for human error rates, which are assumed stable across environments. A robust receiver operating characteristic frontier evaluates fixed machine thresholds over a label-preserving Wasserstein set. Replacement requires a specified posterior probability that the machine has no higher false-positive rate and no lower true-positive rate than the human throughout the set. We show that the estimated frontier converges uniformly and derive welfare bounds that separate replacement decisions from threshold choice. Even with a known frontier and increasingly informative human histories, threshold choice can leave a persistent welfare gap from a benchmark matching the human’s false-positive rate at deployment. In simulations with a fixed score, some per-observation displacement bounds allow partial replacement with positive mean welfare gains over retention at evaluated distributions within the corresponding sets; average budgets of the same numerical sizes lead to complete retention. Among thresholds satisfying the same posterior requirement, welfare-based choice improves mean deployment welfare relative to probability maximization in these simulations.</p>
     </article>
 
     <article class="paper">
@@ -79,6 +76,30 @@
       <details>
         <summary>Abstract</summary>
         <p>Whether estimated combination weights improve on equal weights depends not only on the signal in forecast differences, but also on how much of that signal the forecasting procedure recovers and at what cost. We express the expected mean squared forecast error (MSFE) gain in terms of signal recovery and estimation costs, giving a boundary for when a specified forecasting procedure improves on equal weighting. We complement this theoretical boundary with a decision rule based on past out-of-sample loss differences to choose between equal weights and the estimated weights. Under stationarity and weak dependence, with estimation windows fixed, the probability of choosing the lower-MSFE method tends to one as past evaluations accumulate, provided the two population MSFEs differ. Simulations and macroeconomic applications illustrate the comparison and the choices of equal and estimated weights.</p>
+      </details>
+    </article>
+
+  </section>
+
+  <section class="papers papers--additional" aria-labelledby="additional-working-papers">
+    <h2 class="papers__heading" id="additional-working-papers">Additional Working Papers</h2>
+    <article class="paper">
+      <h3>Generated Instruments with Validation Data <span class="coauthor">with Xinran Liu</span></h3>
+      <div class="paper__meta"><span>Working Paper</span></div>
+      <p class="paper__summary">Validation data help distinguish robust conclusions about the yield response to FOMC news from conclusions that depend on instrument validity.</p>
+      <details>
+        <summary>Abstract</summary>
+        <p>Which conclusions about the yield response to Federal Open Market Committee (FOMC) news survive when the policy instrument is imperfect? We study nominal and real yields and inflation compensation around 92 FOMC meetings using an instrument constructed from changes in money-market rates around FOMC announcements. Because the instrument may also reflect nonpolicy news, we use historical benchmark data to quantify the resulting instrument error. Treating the instrument as valid, both nominal and real yields rise, with real yields rising more. Allowing the instrument to be imperfect, the evidence that both yields rise remains more robust than their ordering. This validation evidence therefore distinguishes which parts of the yield response continue to support a policy interpretation.</p>
+      </details>
+    </article>
+
+    <article class="paper">
+      <h3>Mixed Bundling from Separate-Sales Data</h3>
+      <div class="paper__meta"><span>Working Paper</span></div>
+      <p class="paper__summary">We characterize when a mixed-bundling menu is optimal under revenue ambiguity using joint purchase tables from historical separate sales.</p>
+      <details>
+        <summary>Abstract</summary>
+        <p>A seller has sold two goods separately at two price levels and knows, for each level, the shares of buyers who bought neither good, one of them, or both. She evaluates a selling mechanism by its worst-case revenue over all value distributions consistent with these purchase tables. For a class of symmetric tables, we show that the mixed-bundling menu charging the higher historical price for either good and the sum of the two prices for both is optimal among all mechanisms if and only if two inequalities in the observed shares hold. The bundle discount must pay for itself, and serving the buyers the menu excludes must not be worth the information rents it creates. With data on each good's sales alone, separate sales would be optimal, so the gain comes from knowing which goods are bought together. The menu can also strictly outperform every randomization over separate sales and pure bundling, and its revenue need not be identified by the data.</p>
       </details>
     </article>
   </section>
