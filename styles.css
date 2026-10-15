@@ -6,8 +6,8 @@
   --paper: #ffffff;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  --page: 920px;
-  --measure: 740px;
+  --page: 1100px;
+  --measure: 840px;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -69,7 +69,7 @@ a:hover { text-decoration: underline; }
   font-weight: 650;
   margin: 0 0 28px;
 }
-.intro__text { max-width: 650px; font-size: 18px; }
+.intro__text { max-width: 700px; font-size: 18px; }
 .quick-links {
   display: flex;
   flex-wrap: wrap;
@@ -229,7 +229,11 @@ details p {
   background: #f7f7f7;
 }
 
-@media (max-width: 680px) {
+@media (min-width: 761px) and (max-width: 960px) {
+  .hero { grid-template-columns: minmax(0, 1fr) 180px; gap: 32px; }
+  .portrait-wrap, .portrait { width: 180px; }
+}
+@media (max-width: 760px) {
   body { font-size: 16.5px; }
   .page { padding: 52px 20px 80px; }
   .nav { padding: 15px 20px; }
@@ -265,4 +269,18 @@ details p {
   font-family: var(--sans);
   font-size: 14px;
   font-weight: 600;
+}
+
+/* Selected student feedback: modest academic styling */
+.teaching-feedback__intro { color: var(--muted); font-size: 15px; }
+.student-quote {
+  margin: 18px 0 0;
+  padding: 3px 0 3px 18px;
+  border-left: 2px solid #d6dde5;
+}
+.student-quote p { margin: 0 0 6px; }
+.student-quote footer {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--muted);
 }
