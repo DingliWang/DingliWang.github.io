@@ -158,7 +158,7 @@ a:hover { text-decoration: underline; }
 .papers { max-width: var(--measure); margin-top: 42px; }
 .paper { padding: 28px 0; border-top: 1px solid var(--rule); }
 .paper:first-child { border-top: 0; padding-top: 0; }
-.paper h2 {
+.paper h2, .paper h3 {
   font-family: var(--serif);
   font-size: 22px;
   line-height: 1.35;
@@ -283,4 +283,50 @@ details p {
   font-family: var(--sans);
   font-size: 13px;
   color: var(--muted);
+}
+
+/* Working-paper section and expanded JMP abstract */
+.paper .paper__abstract-heading {
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  color: #3f4449;
+  margin: 10px 0 7px;
+}
+.paper__abstract { color: #42474c; margin: 0; }
+.papers--additional { margin-top: 24px; }
+.papers__heading {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: #3f4449;
+  margin: 0 0 18px;
+  padding-top: 22px;
+  border-top: 1px solid var(--rule);
+}
+.papers--additional .paper:first-of-type { border-top: 0; padding-top: 0; }
+
+/* Teaching: tighter course list and clear section ordering */
+.teaching-page { padding-top: 58px; }
+.teaching-page .list-section {
+  margin-top: 28px;
+  padding-top: 16px;
+}
+.teaching-page .list-section h2 { margin-bottom: 9px; }
+.teaching-page .cvrow {
+  padding: 6px 0;
+  gap: 12px;
+  line-height: 1.4;
+}
+.teaching-page .cvrow .sub { margin-top: 1px; }
+.teaching-page .teaching-sample { padding: 13px 0; }
+.teaching-page .student-quote { margin-top: 14px; }
+@media (max-width: 760px) {
+  .teaching-page { padding-top: 48px; }
 }
