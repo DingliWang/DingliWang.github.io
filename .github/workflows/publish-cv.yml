@@ -1,0 +1,48 @@
+name: Publish CV PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'cv-source/Dingli_Wang_CV.tex'
+      - '.github/workflows/publish-cv.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout website
+        uses: actions/checkout@v4
+      - name: Compile CV from LaTeX
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: Dingli_Wang_CV.tex
+          working_directory: cv-source
+          texlive_version: '2026'
+      - name: Confirm two-page layout
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s cv-source/Dingli_Wang_CV.pdf
+          if command -v pdfinfo >/dev/null 2>&1; then
+            pages="$(pdfinfo cv-source/Dingli_Wang_CV.pdf | awk '/^Pages:/{print $2}')"
+            test "$pages" = "2"
+          fi
+      - name: Replace published website CV
+        shell: bash
+        run: |
+          set -euo pipefail
+          if cmp -s cv-source/Dingli_Wang_CV.pdf assets/Dingli_Wang_CV.pdf; then
+            echo "Website CV is already up to date."
+            exit 0
+          fi
+          cp cv-source/Dingli_Wang_CV.pdf assets/Dingli_Wang_CV.pdf
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/Dingli_Wang_CV.pdf
+          git commit -m "Publish updated two-page CV PDF"
+          git push origin HEAD:main
