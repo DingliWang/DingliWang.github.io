@@ -36,6 +36,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          git fetch origin main
+          git checkout -B main origin/main
           if cmp -s cv-source/Dingli_Wang_CV.pdf assets/Dingli_Wang_CV.pdf; then
             echo "Website CV is already up to date."
             exit 0
