@@ -1,0 +1,201 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,left=0.87in,right=0.87in,top=0.72in,bottom=0.72in,headheight=14pt,headsep=15pt,footskip=25pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype,tabularx,array,enumitem,titlesec,needspace,fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdfauthor={Dingli Wang},pdfcreator={LaTeX},pdflang={en-US}}
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6.0pt}
+\setlength{\emergencystretch}{1.5em}
+\widowpenalty=10000
+\clubpenalty=10000
+\displaywidowpenalty=10000
+\raggedbottom
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\lhead{\small Dingli Wang}
+\rhead{\small \DocName}
+\cfoot{\small\thepage}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+\newcommand{\docheader}[1]{%
+  \thispagestyle{plain}%
+  {\Large\bfseries Dingli Wang}\hfill{\large #1}\par
+  \vspace{2pt}
+  {\small Department of Economics, University of California, Riverside}\par
+  {\small\href{mailto:dingli.wang@email.ucr.edu}{dingli.wang@email.ucr.edu}\quad\textbar\quad
+  \href{https://dingliwang.github.io/}{dingliwang.github.io}\quad\textbar\quad\href{https://ssrn.com/author=10994248}{SSRN}}\par
+  \vspace{4pt}\hrule height 0.4pt\vspace{9pt}
+}
+\newcommand{\coauthor}[1]{{\normalfont (with #1)}}
+
+\newcommand{\DocName}{Curriculum Vitae}
+\hypersetup{pdftitle={Dingli Wang - Curriculum Vitae}}
+\setlength{\parskip}{4pt}
+\renewcommand{\baselinestretch}{1.015}
+\titleformat{\section}{\normalsize\scshape}{}{0pt}{}[{\vspace{1pt}\titlerule[0.35pt]}]
+\titlespacing*{\section}{0pt}{12pt}{7pt}
+\newcommand{\cvrow}[2]{\begin{tabularx}{\textwidth}{@{}Xr@{}}#1&#2\end{tabularx}\par}
+\newcommand{\paper}[3]{\needspace{6\baselineskip}\textbf{#1}\par {#2}\par {\small #3}\par}
+\lfoot{\small Updated October 17, 2026}
+\cfoot{}
+\rfoot{\small\thepage}
+\fancypagestyle{plain}{\fancyhf{}\lfoot{\small Updated October 17, 2026}\rfoot{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
+\begin{document}
+\thispagestyle{plain}
+{\fontsize{25}{28}\selectfont\bfseries Dingli Wang}\par
+\vspace{3pt}
+Department of Economics, University of California, Riverside\par
+\href{mailto:dingli.wang@email.ucr.edu}{dingli.wang@email.ucr.edu}\quad\textbar\quad (951)~231--0895\quad\textbar\quad
+\href{https://dingliwang.github.io/}{dingliwang.github.io}\quad\textbar\quad\href{https://ssrn.com/author=10994248}{SSRN}
+
+\vspace{7pt}
+{\small
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+\textbf{Placement Director} & \textbf{Placement Coordinator}\\
+Joseph Cummins & Gary Kuzas\\
+(951)~827--1582 \quad \href{mailto:joseph.cummins@ucr.edu}{joseph.cummins@ucr.edu} &
+(951)~827--1474 \quad \href{mailto:gary.kuzas@ucr.edu}{gary.kuzas@ucr.edu}
+\end{tabularx}}
+
+\section{Education}
+\cvrow{\textbf{University of California, Riverside} --- Ph.D. in Economics}{Expected June 2027}
+{\small Dissertation committee: Tae-Hwy Lee (Chair), Donggyu Kim, Ruoyao Shi.}\par
+\vspace{3pt}
+\cvrow{\textbf{Boston University} --- M.A. in Economics}{2020}
+\vspace{3pt}
+\cvrow{\textbf{Tianjin University of Finance and Economics} --- B.S. in Economic Statistics}{2018}
+
+\section{Research Fields}
+Econometrics; Financial Econometrics; Forecasting; Machine Learning and AI in Economics
+
+\section{Research Papers}
+
+\needspace{6\baselineskip}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\textbf{Robust Replacement of Human Decision Makers under Distribution Shift}
+& \textit{Job Market Paper}
+\end{tabularx}
+{\textit{Revise and resubmit, Journal of Econometrics}}\par
+{\small
+I study when a machine should replace a human decision maker before its deployment distribution is known. Historical
+decisions provide a posterior for human error rates, assumed stable across environments. A robust receiver operating
+characteristic frontier identifies fixed machine thresholds satisfying a posterior requirement of no deterioration in either
+error rate over a label-preserving Wasserstein set. I establish uniform frontier estimation and welfare bounds that separate
+replacement decisions from threshold choice. Even with a known frontier and increasingly informative human histories,
+threshold choice can leave a persistent welfare gap from a benchmark that matches the human's false-positive rate. Simulations
+show how average and per-observation displacement restrictions affect replacement. Within the same posterior feasible set,
+choosing thresholds by a welfare lower bound improves mean deployment welfare in this design.
+}\par
+
+\vspace{6pt}
+
+\paper
+{Median-Anchored Adjustment of Joint VaR--ES Forecasts
+ {\small\textnormal{with Tae-Hwy Lee}}}
+{\textit{Under review, Journal of Business \& Economic Statistics}}
+{A one-parameter adjustment to existing tail-risk forecasts that rescales their
+distances from the fitted median, preserves VaR--ES ordering, and has a closed-form
+spread-weighted quantile estimator.}
+
+\vspace{6pt}
+
+\paper
+{Adversarial Density Forecast for Macro-financial Risks
+ {\small\textnormal{with Tae-Hwy Lee}}}
+{}
+{An anchored conditional Wasserstein generative model for density forecasting in
+short macroeconomic samples, with theory and evidence on distributional accuracy
+and sensitivity to training randomness.}
+
+\vspace{6pt}
+
+\paper
+{When Should Forecasts Be Equally Weighted? Signal Recovery and Estimation Costs}
+ %{\small\textnormal{with Xinran Liu}}}
+{\textit{Under review, International Journal of Forecasting}}
+{A comparison of equal and estimated forecast weights that separates recovered
+predictive signal from estimation costs, accounts for tuning and component estimation,
+and uses past out-of-sample losses to guide the choice.}
+
+
+\newpage
+\section{Teaching Experience}
+\textit{University of California, Riverside}\par
+\vspace{2pt}
+\textbf{Instructor of Record}\par
+\cvrow{ECON 182 --- Trade, Globalization, and Development}{Summer 2026}
+\cvrow{ECON/BUS 178 --- International Trade}{Summer 2025}
+\cvrow{\textbf{Instructor} --- Statistics Camp (Ph.D.)}{Summer 2026}
+\vspace{5pt}
+\textbf{Teaching Assistant}\par
+\cvrow{ECON 205A --- Econometric Methods I (Ph.D.)}{Fall 2026}
+\cvrow{ECON 205C --- Econometric Methods III (Ph.D.)}{Spring 2026}
+\cvrow{ECON 107 --- Introductory Econometrics I}{Spring 2025}
+\cvrow{ECON 101 --- Statistics for Economics}{2023--2026 (8 terms)}
+\cvrow{ECON 003 --- Introduction to Microeconomics}{Winter 2023}
+\cvrow{ECON 002 --- Introduction to Macroeconomics}{2022--2024 (4 terms)}
+
+\section{Conference Presentations and Seminars}
+\cvrow{Midwest Econometrics Group (MEG), Cincinnati}{October 2026}
+\cvrow{International Association for Applied Econometrics (IAAE), Lisbon}{June 2026}
+\cvrow{Asian Meeting of the Econometric Society (AMES), Hong Kong}{June 2026}
+\cvrow{Econometrics Seminar, UC Riverside}{November 2026}
+\cvrow{Econometrics Seminar, UC Riverside}{April 2026}
+
+\section{Fellowships and Awards}
+\cvrow{Outstanding Teaching Assistant Award, University of California, Riverside}{2026}
+\cvrow{Dean's Distinguished Fellowship, University of California, Riverside}{2021--2026}
+\cvrow{High Pass, Ph.D. Qualifying Examination, University of California, Riverside}{2022}
+\cvrow{First Prize, Contemporary Undergraduate Mathematical Contest in Modeling}{2016}
+
+\section{Computing and Languages}
+\textbf{Computing:} Python, R, Stata, EViews, \LaTeX\par
+\textbf{Languages:} English (fluent); Mandarin Chinese (native)
+
+
+\vspace{-8pt}
+\section{References\hfill{\normalfont\footnotesize University of California, Riverside}}
+
+\begingroup
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1}
+\begin{tabularx}{\textwidth}{@{}
+>{\raggedright\arraybackslash}X
+@{\hspace{1.3em}}
+>{\raggedright\arraybackslash}X@{}}
+\begin{minipage}[t]{\linewidth}\vspace{0pt}\footnotesize\setlength{\parskip}{0pt}
+{\small\textbf{\href{http://faculty.ucr.edu/~taelee/}{Tae-Hwy Lee}} (Chair)}\par
+Professor\par
+\href{mailto:tae.lee@ucr.edu}{tae.lee@ucr.edu}\par
+(951) 827-1509
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}\vspace{0pt}\footnotesize\setlength{\parskip}{0pt}
+{\small\textbf{\href{https://sites.google.com/site/donggyukim0329/home}{Donggyu Kim}}}\par
+Professor\par
+\href{mailto:donggyu.kim@ucr.edu}{donggyu.kim@ucr.edu}\par
+(951) 827-8372
+\end{minipage} \\[3pt]
+\begin{minipage}[t]{\linewidth}\vspace{0pt}\footnotesize\setlength{\parskip}{0pt}
+{\small\textbf{\href{https://ruoyaoshi.github.io}{Ruoyao Shi}}}\par
+Associate Professor\par
+\href{mailto:ruoyao.shi@ucr.edu}{ruoyao.shi@ucr.edu}\par
+(951) 827-1494
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}\vspace{0pt}\footnotesize\setlength{\parskip}{0pt}
+{\small\textbf{\href{https://sites.google.com/site/vsovero/home}{Veronica T. Sovero}}}\par
+Associate Professor of Teaching\par
+\href{mailto:veronica.sovero@ucr.edu}{veronica.sovero@ucr.edu}\par
+(951) 827-0224
+\end{minipage}
+\end{tabularx}
+\endgroup
+
+\end{document}
