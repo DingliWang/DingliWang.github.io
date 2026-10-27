@@ -83,14 +83,15 @@ Econometrics; Financial Econometrics; Forecasting; Machine Learning and AI in Ec
 \end{tabularx}
 {\textit{Revise and resubmit, Journal of Econometrics}}\par
 {\small
-I study when a machine should replace a human decision maker before its deployment distribution is known. Historical
-decisions provide a posterior for human error rates, assumed stable across environments. A robust receiver operating
-characteristic frontier identifies fixed machine thresholds satisfying a posterior requirement of no deterioration in either
-error rate over a label-preserving Wasserstein set. I establish uniform frontier estimation and welfare bounds that separate
-replacement decisions from threshold choice. Even with a known frontier and increasingly informative human histories,
-threshold choice can leave a persistent welfare gap from a benchmark that matches the human's false-positive rate. Simulations
-show how average and per-observation displacement restrictions affect replacement. Within the same posterior feasible set,
-choosing thresholds by a welfare lower bound improves mean deployment welfare in this design.
+This paper studies when a machine learning algorithm should replace a human decision maker under distribution shift. We
+learn each human's error rates from past decisions and hold them fixed, while the data seen by the algorithm may shift
+within a Wasserstein ball. For each threshold, we compute the algorithm's worst false positive and true positive rates over
+the ball, which gives a worst-case ROC curve. We replace a human only if some point on this curve is, with high posterior
+probability, at least as good as the human in both rates. We show that the estimated curve converges uniformly and bound
+the welfare loss from replacement. We also show that, relative to a benchmark that knows the deployment distribution and
+each human's error rates, choosing the threshold with the highest posterior probability can leave a welfare loss that does
+not vanish with more data. In simulations, robust rules replace fewer humans than a rule that ignores shifts, giving up
+some gains without shifts but losing less after large shifts.
 }\par
 
 \vspace{6pt}
