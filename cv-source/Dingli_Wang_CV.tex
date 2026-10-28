@@ -36,16 +36,16 @@
 
 \newcommand{\DocName}{Curriculum Vitae}
 \hypersetup{pdftitle={Dingli Wang - Curriculum Vitae}}
-\setlength{\parskip}{4pt}
-\renewcommand{\baselinestretch}{1.015}
+\setlength{\parskip}{3pt}
+\renewcommand{\baselinestretch}{1.0}
 \titleformat{\section}{\normalsize\scshape}{}{0pt}{}[{\vspace{1pt}\titlerule[0.35pt]}]
-\titlespacing*{\section}{0pt}{12pt}{7pt}
+\titlespacing*{\section}{0pt}{8pt}{5pt}
 \newcommand{\cvrow}[2]{\begin{tabularx}{\textwidth}{@{}Xr@{}}#1&#2\end{tabularx}\par}
-\newcommand{\paper}[3]{\needspace{6\baselineskip}\textbf{#1}\par {#2}\par {\small #3}\par}
-\lfoot{\small Updated October 17, 2026}
+\newcommand{\paper}[3]{\needspace{4\baselineskip}\textbf{#1}\par {#2}\par {\small #3}\par}
+\lfoot{\small Updated October 27, 2026}
 \cfoot{}
 \rfoot{\small\thepage}
-\fancypagestyle{plain}{\fancyhf{}\lfoot{\small Updated October 17, 2026}\rfoot{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
+\fancypagestyle{plain}{\fancyhf{}\lfoot{\small Updated October 27, 2026}\rfoot{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
 \begin{document}
 \thispagestyle{plain}
 {\fontsize{25}{28}\selectfont\bfseries Dingli Wang}\par
@@ -54,7 +54,7 @@ Department of Economics, University of California, Riverside\par
 \href{mailto:dingli.wang@email.ucr.edu}{dingli.wang@email.ucr.edu}\quad\textbar\quad (951)~231--0895\quad\textbar\quad
 \href{https://dingliwang.github.io/}{dingliwang.github.io}\quad\textbar\quad\href{https://ssrn.com/author=10994248}{SSRN}
 
-\vspace{7pt}
+\vspace{1pt}
 {\small
 \begin{tabularx}{\textwidth}{@{}X X@{}}
 \textbf{Placement Director} & \textbf{Placement Coordinator}\\
@@ -76,25 +76,17 @@ Econometrics; Financial Econometrics; Forecasting; Machine Learning and AI in Ec
 
 \section{Research Papers}
 
-\needspace{6\baselineskip}
+\needspace{4\baselineskip}
 \begin{tabularx}{\textwidth}{@{}Xr@{}}
 \textbf{Robust Replacement of Human Decision Makers under Distribution Shift}
 & \textit{Job Market Paper}
 \end{tabularx}
 {\textit{Revise and resubmit, Journal of Econometrics}}\par
 {\small
-This paper studies when a machine learning algorithm should replace a human decision maker under distribution shift. We
-learn each human's error rates from past decisions and hold them fixed, while the data seen by the algorithm may shift
-within a Wasserstein ball. For each threshold, we compute the algorithm's worst false positive and true positive rates over
-the ball, which gives a worst-case ROC curve. We replace a human only if some point on this curve is, with high posterior
-probability, at least as good as the human in both rates. We show that the estimated curve converges uniformly and bound
-the welfare loss from replacement. We also show that, relative to a benchmark that knows the deployment distribution and
-each human's error rates, choosing the threshold with the highest posterior probability can leave a welfare loss that does
-not vanish with more data. In simulations, robust rules replace fewer humans than a rule that ignores shifts, giving up
-some gains without shifts but losing less after large shifts.
+This paper studies when a machine learning algorithm should replace a human decision maker under distribution shift. We infer each human's error rates from past decisions, assuming that they stay the same on future cases, while the data seen by the algorithm may shift within a Wasserstein ball. For each threshold, we compute the algorithm's worst false positive and true positive rates over the ball, which gives a worst-case ROC curve. We replace a human only if some point on this curve is, with high posterior probability, at least as good as the human in both rates. We show that the estimated curve converges uniformly and bound the welfare loss from replacement. We also compare the rule with an infeasible benchmark that knows the deployment distribution and each human's error rates and sets the algorithm's false positive rate equal to the human's. Relative to this benchmark, choosing the threshold with the highest posterior probability can leave a welfare loss that does not vanish with more data. In simulations, robust rules replace fewer humans than a rule that ignores shifts, giving up some gains without shifts but losing less after large shifts.
 }\par
 
-\vspace{6pt}
+\vspace{3pt}
 
 \paper
 {Median-Anchored Adjustment of Joint VaR--ES Forecasts
@@ -104,7 +96,7 @@ some gains without shifts but losing less after large shifts.
 distances from the fitted median, preserves VaR--ES ordering, and has a closed-form
 spread-weighted quantile estimator.}
 
-\vspace{6pt}
+\vspace{3pt}
 
 \paper
 {Adversarial Density Forecast for Macro-financial Risks
@@ -114,7 +106,7 @@ spread-weighted quantile estimator.}
 short macroeconomic samples, with theory and evidence on distributional accuracy
 and sensitivity to training randomness.}
 
-\vspace{6pt}
+\vspace{3pt}
 
 \paper
 {When Should Forecasts Be Equally Weighted? Signal Recovery and Estimation Costs}
@@ -133,7 +125,7 @@ and uses past out-of-sample losses to guide the choice.}
 \cvrow{ECON 182 --- Trade, Globalization, and Development}{Summer 2026}
 \cvrow{ECON/BUS 178 --- International Trade}{Summer 2025}
 \cvrow{\textbf{Instructor} --- Statistics Camp (Ph.D.)}{Summer 2026}
-\vspace{5pt}
+\vspace{3pt}
 \textbf{Teaching Assistant}\par
 \cvrow{ECON 205A --- Econometric Methods I (Ph.D.)}{Fall 2026}
 \cvrow{ECON 205C --- Econometric Methods III (Ph.D.)}{Spring 2026}
